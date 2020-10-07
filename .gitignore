@@ -1,0 +1,9 @@
+.idea/*
+.mvn/*
+target/*
+
+discordrolebot.iml
+HELP.md
+mvnw
+mvnw.cmd
+
