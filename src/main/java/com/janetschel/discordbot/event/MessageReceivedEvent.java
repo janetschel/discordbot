@@ -45,7 +45,7 @@ public class MessageReceivedEvent extends ListenerAdapter {
 
     private void addMutedRoleToAllMembers(String idOfMember, Guild guild, Role mutedRole, List<Member> members) {
         members.forEach(member -> {
-            if (String.valueOf(member.getIdLong()).equals(idOfMember)) {
+            if (!String.valueOf(member.getIdLong()).equals(idOfMember)) {
                 guild.addRoleToMember(member, mutedRole).complete();
             }
         });
